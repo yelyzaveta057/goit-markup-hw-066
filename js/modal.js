@@ -21,3 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerBtn = document.querySelector("[data-modal-open]");
+  const mobileMenu = document.querySelector("[data-menu]");
+  const closeMenuBtn = mobileMenu.querySelector(".mobile-menu-close-btn");
+
+  burgerBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("is-open");
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("is-open");
+  });
+});
