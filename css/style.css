@@ -1097,7 +1097,6 @@ button {
 .modal-button:focus .icon-close {
   fill: #ffffff;
   border: none;
-  background-color: #404bbf;
 }
 .modal-button:focus {
   background-color: #404bbf;
