@@ -1010,6 +1010,7 @@ button {
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
+  z-index: 2000;
 }
 .modal {
   position: absolute;
