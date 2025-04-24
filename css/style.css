@@ -150,7 +150,7 @@ button {
   .contact-link.current {
     position: relative;
   }
-  .contact-link.current::after {
+  .contact-link:hover::after {
     content: "";
     width: 100%;
     height: 4px;
@@ -160,6 +160,22 @@ button {
     border-radius: 2px;
     background-color: #404bbf;
   }
+  .contact-link {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .contact-link.current::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
+
   .address-list {
     display: flex;
     flex-direction: column;
