@@ -22,16 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const burgerBtn = document.querySelector("[data-modal-open]");
-  const mobileMenu = document.querySelector("[data-menu]");
-  const closeMenuBtn = mobileMenu.querySelector(".mobile-menu-close-btn");
+const navLinks = document.querySelectorAll(".contact-link");
 
-  burgerBtn.addEventListener("click", () => {
-    mobileMenu.classList.add("is-open");
-  });
-
-  closeMenuBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("is-open");
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    navLinks.forEach((l) => l.classList.remove("current"));
+    this.classList.add("current");
   });
 });
